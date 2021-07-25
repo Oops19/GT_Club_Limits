@@ -1,4 +1,4 @@
 #  GetTogether Club Limits Removed for TS4
-The mod removes various gT club limits.
+This mod removes various Get Together Club limits.
 
 [README](release_info/mod_documentation/README.md)
