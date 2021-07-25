@@ -5,7 +5,7 @@
 
 import os
 
-from gtw_club_limits.modinfo import ModInfo
+from gt_club_limits.modinfo import ModInfo
 from sims4communitylib.utils.common_log_registry import CommonLogRegistry, CommonLog
 
 log: CommonLog = CommonLogRegistry.get().register_log(f"{ModInfo.get_identity().author}_{ModInfo.get_identity().name}", ModInfo.get_identity().name)
