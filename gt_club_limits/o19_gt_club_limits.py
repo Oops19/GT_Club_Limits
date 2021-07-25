@@ -121,13 +121,13 @@ def can_sim_info_join(self, new_sim_info):
 '''
 
 
-@CommonInjectionUtils.inject_safely_into(Club, Club.get_member_cap.__name__)
+@CommonInjectionUtils.inject_safely_into(ModInfo.get_identity(), Club, Club.get_member_cap.__name__)
 def o19_get_member_cap(original, self, *args, **kwargs) -> int:
     global MAX_CLUB_MEMBERS
     return MAX_CLUB_MEMBERS
 
 
-@CommonInjectionUtils.inject_safely_into(Club, Club.is_zone_valid_for_gathering.__name__)
+@CommonInjectionUtils.inject_safely_into(ModInfo.get_identity(), Club, Club.is_zone_valid_for_gathering.__name__)
 def o19_is_zone_valid_for_gathering(original, self, *args, **kwargs) -> bool:
     if bool(configuration.get(D.NO_CLUB_ZONE_VALIDATION)):
         return True
@@ -135,7 +135,7 @@ def o19_is_zone_valid_for_gathering(original, self, *args, **kwargs) -> bool:
         return original(self, *args, **kwargs)
 
 
-@CommonInjectionUtils.inject_safely_into(ClubService, Club.validate_sim_info.__name__)
+@CommonInjectionUtils.inject_safely_into(ModInfo.get_identity(), Club, Club.validate_sim_info.__name__)
 def o19_validate_sim_info(original, self, *args, **kwargs) -> bool:
     if bool(configuration.get(D.NO_CLUB_REQUIREMENTS_VALIDATION)):
         return True
@@ -143,7 +143,7 @@ def o19_validate_sim_info(original, self, *args, **kwargs) -> bool:
         return original(self, *args, **kwargs)
 
 
-@CommonInjectionUtils.inject_safely_into(ClubService, ClubService.can_sim_info_join_more_clubs.__name__)
+@CommonInjectionUtils.inject_safely_into(ModInfo.get_identity(), ClubService, ClubService.can_sim_info_join_more_clubs.__name__)
 def o19_can_sim_info_join_more_clubs(original, self, *args, **kwargs) -> bool:
     if bool(configuration.get(D.MAX_CLUBS_UNLIMITED)):
         return True
