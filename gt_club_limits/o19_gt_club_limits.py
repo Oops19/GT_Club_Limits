@@ -18,7 +18,7 @@ from sims4communitylib.utils.common_log_registry import CommonLogRegistry, Commo
 
 log: CommonLog = CommonLogRegistry.get().register_log(f"{ModInfo.get_identity().author}_{ModInfo.get_identity().name}", ModInfo.get_identity().name)
 log.enable()
-log.info("GTW Club Limits")
+log.info("GT Club Limits")
 
 
 # Constant definitions
