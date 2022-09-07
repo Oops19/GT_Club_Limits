@@ -25,3 +25,13 @@ class ModInfo(CommonModInfo):
     def _file_path(self) -> str:
         # This is simply a file path that you do not need to change.
         return ModInfo._FILE_PATH
+
+    @property
+    def _version(self) -> str:
+        return '1.0.4'
+
+
+"""
+1.0.4 Fixed a few typos and PEP warnings.
+1.0.2 TS4 folders are now detected differently.
+"""
