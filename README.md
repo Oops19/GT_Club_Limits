@@ -3,8 +3,6 @@ The mod removes various GT club limits.
 
 It will not break with every TS4 update as it is script based. So there will be usually no new release after a TS4 update.
 
-[![Some  GetTogether Clubs with scroll-bar](GT_Club_Limits.png)]
-
 You may copy the contents of this file to https://dillinger.io/ far a better representation if you don't have a MarkDown viewer available.
 
 ### Installation
