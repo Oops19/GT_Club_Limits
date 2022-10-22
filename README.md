@@ -16,12 +16,13 @@ As long as S4CL is not already installed in your mods folder I highly recommend 
 ##### Final directory structure
 Some users are new to Mods and need help. Here's the directory structure which works for me:
 
-`The Sims 4/Mods/_cn_/sims4communitylib.ts4script` - The dependency from above
+`The Sims 4/Mods/_cn_/sims4communitylib.ts4script` - The dependency from above - might be in any other folder
 
-`The Sims 4/Mods/_cn_/sims4communitylib.package`
+`The Sims 4/Mods/_cn_/sims4communitylib.package` - The dependency from above - might be in any other folder
 
-`The Sims 4/Mods/_o19_/o19_gt_club_limits.ts4script` - This mod itself.
+`The Sims 4/Mods/_o19_/o19_GT_Club_Limits.ts4script` - This mod itself.
 
+`The Sims 4/Mods/_o19_/o19_GT_Club_Limits_PieMenu_CC.package` - The interaction for PIE menu.
 
 `The Sims 4/mod_description/` - Optional directory with references for you regarding this and other mods.
 
